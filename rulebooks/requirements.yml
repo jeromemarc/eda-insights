@@ -3,4 +3,5 @@ collections:
   - name: ansible.eda
   - name: community.general
   - name: redhatinsights.eda
+    source: https://galaxy.ansible.com
   - name: servicenow.itsm
