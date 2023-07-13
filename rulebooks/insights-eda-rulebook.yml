@@ -1,7 +1,7 @@
 ---
 - name: Listen for Red Hat Insights events
   hosts: localhost
-
+  limit: localhost
   sources:
     - redhatinsights.eda.insights:
         host: 0.0.0.0
