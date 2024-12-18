@@ -15,3 +15,10 @@
       action:
         debug:
           msg: "event.payload: {{ event.payload }}"
+    - name: Match Integrations integration-test event
+      condition: 
+        event.payload.application == "integrations"
+        and event.payload.event_type == "integrations-test"
+      action:
+        debug:
+          msg: "Integration successfully configured."
