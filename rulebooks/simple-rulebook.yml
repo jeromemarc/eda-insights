@@ -9,8 +9,8 @@
 
   rules:
    - name: Handle message payload
-     condition: event.payload != ""
+     condition: event != ""
 
      action:
        debug:
-         msg: "Received: {{ event.payload }}"
+         msg: "Received: {{ event }}"
