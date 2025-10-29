@@ -14,9 +14,3 @@
      action:
        debug:
          msg: "Received: {{ event }}"
-     
-     labels:
-      - 'Activated by Red Hat Insights'
-      - {{ event.payload.application }}
-      - {{ event.payload.event_type }}
-      - {{ event.payload.context.display_name | default('Activated by Red Hat Insights') }}
