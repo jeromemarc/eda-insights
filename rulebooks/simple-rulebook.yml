@@ -9,7 +9,7 @@
 
   rules:
    - name: Handle message payload
-     condition: event != ""
+     condition: event.meta.headers is defined
 
      action:
        debug:
